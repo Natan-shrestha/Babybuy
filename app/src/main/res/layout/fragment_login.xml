@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/lytLogin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="40dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imgLogo"
+                    android:layout_width="202dp"
+                    android:layout_height="145dp"
+                    android:layout_marginBottom="40dp"
+                    app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.ExtraLarge"
+                    app:srcCompat="@drawable/logo" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inlEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="emailAddress"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-black"
+                        android:textStyle="bold"
+                        android:background="@color/off_white"
+                        android:hint="@string/edt_email"
+                        android:inputType="textEmailAddress" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inlPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-black"
+                        android:textStyle="bold"
+                        android:background="@color/off_white"
+                        android:hint="@string/edt_pwd"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <CheckBox
+                    android:id="@+id/checkBoxRemberme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+                    android:layout_marginEnd="102dp"
+                    android:background="@color/off_white"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Remember me"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-black"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/green_200"
+                    android:text="@string/btn_login" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txtRegisterLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-black"
+                    android:textStyle="bold"
+                    android:background="@color/white"
+                    android:text="@string/txt_register"
+                    android:textColor="@color/navy_blue"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

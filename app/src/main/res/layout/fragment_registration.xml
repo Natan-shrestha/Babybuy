@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="30dp">
+
+            <LinearLayout
+                android:id="@+id/lytLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="40dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imgLogo"
+                    android:layout_width="205dp"
+                    android:layout_height="179dp"
+                    android:layout_marginBottom="40dp"
+                    app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.ExtraLarge"
+                    app:srcCompat="@drawable/logo" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inlName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="name"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-black"
+                        android:textStyle="bold"
+                        android:background="@color/off_white"
+                        android:hint="@string/edt_name"
+                        android:inputType="textPersonName" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inlEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="emailAddress"
+                        android:hint="@string/edt_email"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-black"
+                        android:textStyle="bold"
+                        android:background="@color/off_white"
+                        android:inputType="textEmailAddress" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inlPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/edt_pwd"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-black"
+                        android:textStyle="bold"
+                        android:background="@color/off_white"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inlCPassword"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-black"
+                    android:textStyle="bold"
+                    android:background="@color/off_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtCPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/edt_cpassword"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-black"
+                        android:textStyle="bold"
+                        android:background="@color/off_white"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-black"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/green_200"
+                    android:text="@string/btn_register" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txtLoginLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-black"
+                    android:textStyle="bold"
+                    android:background="@color/white"
+                    android:text="@string/txt_login"
+                    android:textColor="@color/navy_blue" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </ScrollView>
+</layout>
